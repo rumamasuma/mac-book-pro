@@ -13,7 +13,7 @@
 <header></header>
 <!-- main section  -->
 <main>
-    <section class="container mt-3">
+    <section class="container mt-5">
         <div class="row">
             <div class=" col-5">
             <img class="img-fluid" src="images/mac.png" alt="">
@@ -25,21 +25,22 @@
 <!-- Memory section  -->
 <div class="mt-5">
     <h4 class="fw-bold">Memory</h4>
-<button type="button" class="btn btn-outline-dark">8GB unified memory</button>
-<button type="button" class="btn btn-outline-dark">16GB unified memory</button>
+<button id="memory-8gb" type="button" class="btn btn-outline-dark">8GB unified memory</button>
+<button id="memory-16gb" type="button" class="btn btn-outline-dark">16GB unified memory 
+</button>
 </div>
 <!-- storage section  -->
 <div class="mt-5">
     <h4 class="fw-bold">Storage</h4>
-    <button type="button" class="btn btn-outline-dark">256GB SSD storage</button>
-    <button type="button" class="btn btn-outline-dark">512GB SSD storage</button>  
-    <button type="button" class="btn btn-outline-dark">1TB SSD storage</button>  
+    <button id="storage-256gb" type="button" class="btn btn-outline-dark">256GB SSD storage</button>
+    <button id="storage-512gb" type="button" class="btn btn-outline-dark">512GB SSD storage</button>  
+    <button id="storage-1TB" type="button" class="btn btn-outline-dark">1TB SSD storage</button>  
 </div>
 <!-- delivery part  -->
 <div class="mt-5">
     <h4 class="fw-bold">Choose your delivery option </h4>
-    <button type="button" class="btn btn-outline-dark">Friday,Aug 25 FREE Prime Delivery</button>
-    <button type="button" class="btn btn-outline-dark">Friday, Aug 21 Delivey charge $20 </button>      
+    <button id="delivery-free" type="button" class="btn btn-outline-dark">Friday, Aug 25 FREE Prime Delivery</button>
+    <button id="delivery-$20" type="button" class="btn btn-outline-dark">Friday, Aug 21 Delivey charge $20 </button>      
 </div>
 <!-- costing part  -->
 <div class="mt-5 col-5 fw-bolder">
@@ -47,33 +48,33 @@
      <tbody>
          <tr>
              <th>Best Price</th>
-             <td>$ <span id="">1299</span> </td>
+             <td>$ <span id="best-price">1299</span> </td>
          </tr>
          <tr>
              <th>Extra Memory Cost</th>
-             <td>$<span id="">0</span> </td>
+             <td>$<span id="memory-cost">0</span> </td>
          </tr>
          <tr>
              <th>Extra Storage Cost</th>
-             <td>$<span id="">0</span></td>
+             <td>$<span id="storage-cost">0</span></td>
          </tr>
          <tr>
              <th>Delivery charge</th>
-             <td>$<span id="">0</span></td>
+             <td>$<span id="delivery-charge">0</span></td>
          </tr>
      </tbody> 
      <tfoot>
         <tr>
             <th >Total Price</th>
-            <td>$<span id="">1299</span></td>
+            <td>$<span id="total-price">1299</span></td>
         </tr>
      </tfoot> 
    </table>
    <!-- promo code part  -->
    <h4>Add promo code</h4>
    <div class="d-flex">
-    <input class=" me-2" type="text" placeholder="" aria-label="Search">
-    <button class="btn btn-outline-danger" type="button">Apply</button>
+    <input id="promo-code" class=" me-2" type="text" placeholder="" >
+    <button id="apply-button" class="btn btn-danger" type="button">Apply</button>
   </div> 
 </div>
      </div>
@@ -82,7 +83,7 @@
    <hr  class="mx-auto" width="50%">
    <!-- footer section  -->
    <footer>
-       <h1 class="text-center mb-5">Total : $<span>1299</span></h1>
+       <h1 id="discount-total-price" class="text-center mb-5">Total : $<span>1299</span></h1>
    </footer>
 </main>
 <!-- bootstrap script link   -->
