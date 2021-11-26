@@ -4,6 +4,7 @@ function extraMemoryCost(price){
     const externalMemory = document.getElementById('memory-cost');
     externalMemory.innerText = price;  
 }
+
 //  function for extra storage
 function extraStorageCost(price){
     const extraStorage = document.getElementById('storage-cost');
@@ -14,6 +15,7 @@ function deliveryCharge(charge){
     const deliveryCost = document.getElementById('delivery-charge');
     deliveryCost.innerText = charge;
 };
+
 //  handle extra memory events
 document.getElementById('memory-8gb').addEventListener('click',function(){
    extraMemoryCost(0); 
@@ -55,7 +57,7 @@ function updatePrice() {
     const currentStoragePrice = parseFloat(document.getElementById('storage-cost').innerText);
     const currentDeliveryCharge = parseFloat(document.getElementById('delivery-charge').innerText);
     document.getElementById('total-price').innerText = totalCalculation(curretMemoryPrice, currentStoragePrice, currentDeliveryCharge);
-    document.getElementById('discount-total-price').innerText = totalCalculation(curretMemoryPrice, currentStoragePrice, currentDeliveryCharge);
+    // document.getElementById('discount-total-price').innerText = totalCalculation(curretMemoryPrice, currentStoragePrice, currentDeliveryCharge);
 }
 //Calculation
 function totalCalculation(memoryPrice, storagePrice, deliveryCharge) {
@@ -64,12 +66,17 @@ function totalCalculation(memoryPrice, storagePrice, deliveryCharge) {
     return priceTotal;
 };
 // apply button
-document.getElementById('apply-button').addEventListener('click',function(){
-  const  promoCodeField  = document.getElementById('promo-code');
-  const promoCode = promoCodeField.value;
-  if(promoCodeField == stevekaku){
-    document.getElementById('discount-total-price').innerText;
-  }
-}) 
+// document.getElementById('apply-button').addEventListener('click',function(){
+//   const  promoCodeField  = document.getElementById('promo-code');
+//   const promoCode = promoCodeField.value;
+//   if(promoCodeField == stevekaku){
+//     // document.getElementById('discount-total-price').innerText;
+//     const total = 
+//   }
+  
+//   else{
+
+//   }
+// }) 
 
 
